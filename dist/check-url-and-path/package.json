@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "zip": "rm -rf dist && mkdir -p dist/check-url-and-path && find . -mindepth 1 -maxdepth 1 ! -name 'dist' -exec cp -r {} dist/check-url-and-path \\; && cd dist && zip -r check-url-and-path.zip check-url-and-path"
+  }
+} 
